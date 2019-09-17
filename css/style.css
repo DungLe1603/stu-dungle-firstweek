@@ -22,7 +22,8 @@ strong {
 }
 /* Style for header */
 .header {
-  width: 100%;;
+	width: 100%;
+	z-index: 1;
 }
 .dropdown-menu {
   border-radius: unset;
@@ -110,9 +111,90 @@ strong {
   opacity: 1;
 }
 /* Style for banner */
-.banner {
-	height: 657px;
+.banner {	
 	background: #aaa;
+}
+.carousel-item {
+  height: 657px;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.lead {
+	font-family: 'Cabin', sans-serif;
+	background-color: rgb(247, 148, 29);
+	line-height: 50px;
+	letter-spacing: 2px;
+	font-weight: 700;
+	font-size: 24px;
+	margin: 0px;
+	border-radius: 3px;
+	padding: 4px 16px;
+}
+.carousel-caption {
+	left: auto;
+	right: auto;
+	bottom: 50px;
+	width: 100%;
+}
+.item-center {
+	display: flex;
+	justify-content: center;
+}
+.carousel-control {
+	width: 5%;
+}
+.carousel-control-icon {
+	background: rgba(0,0,0,0.9);
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+}
+.carousel-indicators li {
+	transition: opacity 0.3s ease;
+	width: 13px;
+	height: 13px;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0);
+	opacity: 1;
+	background-clip: unset;
+	position: relative;
+	text-indent: 0;
+}
+.image-content {
+	position: absolute;
+	bottom: 13px;
+	left: -60px;
+	width: 135px;
+	height: 60px;
+	border-radius: 4px;	
+	margin-bottom: 10px;
+	align-items: center;
+	display: none;
+  background: no-repeat center center scroll;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+}
+.image-content span {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+.carousel-indicators li:hover .image-content {
+	display: flex;
+}
+.carousel-indicators .active, .carousel-indicators li:hover {
+	background-color: #fff;
 }
 
 /* Small and Medium devices (phones, tablets) */
