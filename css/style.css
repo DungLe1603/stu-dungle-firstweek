@@ -23,7 +23,7 @@ strong {
 /* Style for header */
 .header {
 	width: 100%;
-	z-index: 1;
+	z-index: 9;
 }
 .dropdown-menu {
   border-radius: unset;
@@ -123,24 +123,31 @@ strong {
   -o-background-size: cover;
 	background-size: cover;
 	background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: multiply;
+  background-blend-mode: multiply;  
 }
 .lead {
 	font-family: 'Cabin', sans-serif;
 	background-color: rgb(247, 148, 29);
-	line-height: 50px;
-	letter-spacing: 2px;
 	font-weight: 700;
-	font-size: 24px;
 	margin: 0px;
 	border-radius: 3px;
-	padding: 4px 16px;
+  padding: 4px 16px;
+  line-height: 4vw;
+  letter-spacing: 0.2vmin;
+  font-size: 2vw;
 }
 .carousel-caption {
 	left: auto;
-	right: auto;
-	bottom: 50px;
-	width: 100%;
+	right: auto;	
+  width: 100%;
+  bottom: 50px;
+  display: block !important;
+  animation-name: caption;
+  animation-duration: 1s;
+}
+@keyframes caption {
+  from {bottom: -20px;}
+  to {bottom: 50px; visibility: visible;}
 }
 .item-center {
 	display: flex;
@@ -196,7 +203,6 @@ strong {
 .carousel-indicators .active, .carousel-indicators li:hover {
 	background-color: #fff;
 }
-
 /* Small and Medium devices (phones, tablets) */
 @media only screen and (max-width: 991px) {
 	.header {
@@ -255,6 +261,33 @@ strong {
 		margin: 10px 0;
 	}
 }
+/* Small devices (phones, 767px and down) */
+@media only screen and (max-width: 767px) {
+	.content {
+		padding: 25px;
+		font-size: 12px;
+		line-height: 22px;
+	}
+	.copyright {    
+		font-size: 12px;
+		line-height: 22px;
+		text-align: center;
+	}
+	.footer {    
+		padding: 45px 0 35px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.copyright {    
+		font-size: 14px;
+		line-height: 24px;
+		text-align: left;
+	}
+	.footer {    
+		padding: 100px 0 70px;
+  }
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 	.header {
@@ -285,32 +318,9 @@ strong {
 		color: #00AEEF;
 	}
 }
-/* Small devices (phones, 767px and down) */
-@media only screen and (max-width: 767px) {
-	.content {
-		padding: 25px;
-		font-size: 12px;
-		line-height: 22px;
-	}
-	.copyright {    
-		font-size: 12px;
-		line-height: 22px;
-		text-align: center;
-	}
-	.footer {    
-		padding: 45px 0 35px;
-	}
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	.copyright {    
-		font-size: 14px;
-		line-height: 24px;
-		text-align: left;
-	}
-	.footer {    
-		padding: 100px 0 70px;
-	}
+/* Large devices (/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 /* Laptop devices ( 992px -> 1200px) */
 @media only screen and (max-width: 1200px) and (min-width: 992px) {
