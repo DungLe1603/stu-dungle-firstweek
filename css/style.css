@@ -203,6 +203,94 @@ strong {
 .carousel-indicators .active, .carousel-indicators li:hover {
 	background-color: #fff;
 }
+/* Style for main body */
+.tipycal-section {
+  text-align: center;
+	background: #f5f5f5;
+}
+.colume-block {  
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.block-inner {
+  position: absolute;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  transition: 1s;
+	margin-right: 0;
+	margin-left: 0;
+}
+.colume-block:hover .block-inner {
+	transform: translateX(-50%);
+}
+.block-content {
+	background: rgba(0, 0, 0, 0.4);
+	position: relative;
+}
+.block-title {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+.block-show {
+	height: 100%;
+	overflow: scroll;
+	padding: 15px 20px;
+	background: rgba(255, 255, 255, 0.9);
+}
+.block-image {
+  width: 100%;
+  height: auto;
+}
+.team-name {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
+.team-designation {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+}
+.block-content .team-name {
+  color: #fff;
+}
+.block-show .team-name {
+  color: #000;
+}
+.block-inner a:hover {
+	text-decoration: none;
+	color: #00aeef;
+}
+.block-social a {
+	color: #fff;
+}
+.module-title {
+	padding-top: 55px;
+	padding-bottom: 30px;
+}
+.module-title h2 {
+	font-size: 24px;
+	line-height: 32px;
+	margin: 0 0 10px 0;
+	font-weight: 500;
+	text-transform: inherit;
+	text-align: inherit;
+}
+.module-title p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	text-transform: inherit;
+	text-align: inherit;
 /* Small and Medium devices (phones, tablets) */
 @media only screen and (max-width: 991px) {
 	.header {
