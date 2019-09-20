@@ -20,6 +20,12 @@ strong {
 .full-width {
   width: 100%;
 }
+.no-margin {
+	margin: 0!important;
+}
+.no-padding {
+	padding: 0!important;
+}
 /* Style for header */
 .header {
 	width: 100%;
@@ -105,7 +111,8 @@ strong {
   opacity: 0;
 }
 #back-to-top:hover, #back-to-top:focus{
-  box-shadow: inset 0 0 0;
+	box-shadow: inset 0 0 0;
+	background: #30c7ff;
 }
 #back-to-top.show {
   opacity: 1;
@@ -203,6 +210,153 @@ strong {
 .carousel-indicators .active, .carousel-indicators li:hover {
 	background-color: #fff;
 }
+/* Style for main body */
+/* Style for tipycal section */
+.tipycal-section {
+  text-align: center;
+	background: #f5f5f5;
+}
+.colume-block {  
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.block-inner {
+  position: absolute;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  transition: 1s;
+	margin-right: 0;
+	margin-left: 0;
+}
+.colume-block:hover .block-inner {
+	transform: translateX(-50%);
+}
+.block-content {
+	background: rgba(0, 0, 0, 0.4);
+	position: relative;
+}
+.block-title {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+.block-show {
+	height: 100%;
+	overflow: scroll;
+	padding: 15px 20px;
+	background: rgba(255, 255, 255, 0.9);
+}
+.block-image {
+  width: 100%;
+  height: auto;
+}
+.block-content .team-name {
+  color: #fff;
+}
+.block-show .team-name {
+  color: #000;
+}
+.block-inner a:hover {
+	text-decoration: none;
+	color: #00aeef;
+}
+.block-social a {
+	color: #fff;
+}
+.module-title {
+	padding-top: 55px;
+	padding-bottom: 30px;
+}
+.module-title h2 {
+	font-size: 24px;
+	line-height: 32px;
+	margin: 0 0 10px 0;
+	font-weight: 500;
+	text-transform: inherit;
+	text-align: inherit;
+}
+.module-title p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	text-transform: inherit;
+	text-align: inherit;
+}
+.team-name {
+	font-weight: 700;
+	margin: 0 0 8px;
+}
+.team-designation {
+	font-weight: 400;
+}
+.team-description {
+	font-weight: 300;
+	margin: 15px 0 20px;
+}
+/* Style for services section */
+.service-section {
+	text-align: center;
+	background: url('/images/houzez-header-4.jpg');
+}
+.service-title {
+	padding-top: 55px;
+	color: #fff;
+}
+.service-title h2 {
+	font-size: 24px;
+	line-height: 32px;
+	margin: 0 0 10px 0;
+	font-weight: 500;
+	text-transform: inherit;
+	text-align: inherit;
+}
+.service-title p {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	text-transform: inherit;
+	text-align: inherit;
+}
+.service-column {
+	padding: 40px 0 55px;
+}
+.service-block {
+	background: #fff;
+	padding: 0 30px 30px;
+	transition: 0.2s;
+	border: 1px solid #eee;
+}
+.service-block:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 80px 60px rgba(0, 0, 0, 0.2);
+	position: absolute;;
+	z-index:2;
+	border: none;
+}
+.service-image img {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+.service-content h3 {
+	font-size: 20px;
+	line-height: 28px;
+}
+.service-content .more {
+	color: #00aeef;
+}
+.service-content .more:hover {		
+	text-decoration: none;
+	color: #30c7ff;
+}
+/* End style for main body */
 /* Small and Medium devices (phones, tablets) */
 @media only screen and (max-width: 991px) {
 	.header {
@@ -275,7 +429,30 @@ strong {
 	}
 	.footer {    
 		padding: 45px 0 35px;
-  }
+	}
+	.team-name {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.team-designation {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.team-description {
+    font-size: 12px;
+    line-height: 20px;
+	}
+	.service-image {
+		padding: 38px 0;
+	}
+	.service-content p {
+		font-size: 12px;
+    line-height: 20px;
+	}
+	.service-content .more {
+		font-size: 12px;
+    line-height: 12px;
+	}
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -286,7 +463,34 @@ strong {
 	}
 	.footer {    
 		padding: 100px 0 70px;
-  }
+	}
+	.team-name {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.team-designation {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.team-description {
+    font-size: 14px;
+    line-height: 23px;
+	}
+	.service-image {
+		padding: 80px 0 70px;
+	}
+	.service-content p {
+		font-size: 16px;
+    line-height: 22px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+	}
+	.service-content .more {
+		font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+		margin: 0;
+	}
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -318,12 +522,8 @@ strong {
 		color: #00AEEF;
 	}
 }
-/* Large devices (/desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
 /* Laptop devices ( 992px -> 1200px) */
-@media only screen and (max-width: 1200px) and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
 	.social-contact {
 		width: 300px;
 		overflow: hidden;
