@@ -111,7 +111,8 @@ strong {
   opacity: 0;
 }
 #back-to-top:hover, #back-to-top:focus{
-  box-shadow: inset 0 0 0;
+	box-shadow: inset 0 0 0;
+	background: #30c7ff;
 }
 #back-to-top.show {
   opacity: 1;
@@ -521,12 +522,8 @@ strong {
 		color: #00AEEF;
 	}
 }
-/* Large devices (/desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
 /* Laptop devices ( 992px -> 1200px) */
-@media only screen and (max-width: 1200px) and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
 	.social-contact {
 		width: 300px;
 		overflow: hidden;
