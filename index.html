@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="images/logo.png"/>
-  <title>Let’s talk - ST United</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <title>Let’s talk - ST United</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
 <body>
   <header class="header-section">
     <div class="header">
@@ -337,6 +337,76 @@
         </div>
       </div>
     </section>
+    <section class="client-section">
+      <div class="container">
+        <div class="client-title">
+          <h2>Trusted by the Clients & Partners</h2>
+        </div>
+        <div class="client-column">
+          <div id="owl-carousel" class="owl-carousel owl-theme owl-loaded">
+            <div class="owl-stage-outer">
+              <div class="owl-stage">
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/vsec_logo.png" alt="VESC logo">
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/mti_technology.png" alt="MTI technology logo">
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/tms_group.jpg" alt="TMS group logo">
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/mobifone.png" alt="Mobifone logo">
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/gitstart.png" alt="Gitstart logo">
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/flexidata.png" alt="Flexidata logo">
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/codecomplete.png" alt="Codecomplete logo">
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/synova_logo.png" alt="Synova logo">
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/foundation.jpg" alt="Foundation logo">
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/alacarte_beach.jpg" alt="Alacarte beach logo">
+                  </div>
+                </div>
+                <div class="owl-item">
+                  <div class="owl-img">
+                    <img src="/images/zenDiamondSuites.jpg" alt="zenDiamondSuites logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer-section">
     <div class="footer">
@@ -346,7 +416,7 @@
             <div class="footer-widget">
               <div class="footer-title">
                 <h3 class="text-uppercase">Menu</h3>
-              </div>            
+              </div>
               <div class="footer-content">
                 <div class="row">
                   <div class="col-6 col-md-6">
@@ -414,28 +484,9 @@
       </button>
     </div>
   </footer>
-  <script>
-    if ($('#back-to-top').length) {
-      var scrollTrigger = 100, // px
-        backToTop = function () {
-          var scrollTop = $(window).scrollTop();
-          if (scrollTop > scrollTrigger) {
-            $('#back-to-top').addClass('show');
-          } else {
-            $('#back-to-top').removeClass('show');
-          }
-        };
-      backToTop();
-      $(window).on('scroll', function () {
-        backToTop();
-      });
-      $('#back-to-top').on('click', function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, 700);
-      });
-    }
-  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
